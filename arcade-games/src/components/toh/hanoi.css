@@ -22,3 +22,22 @@
 {
     color: #f87676;
 }
+.hanoi-content
+{
+    border: 2px solid #f6f6f6;
+    display: inline-flex;
+    font-family: sans-serif;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+}
+.col-cont
+{
+    align-items: flex-end;
+    border: 1px solid #28980f;
+    height: 80vh;
+    position: relative;
+    width: 30%;
+}
+
+
