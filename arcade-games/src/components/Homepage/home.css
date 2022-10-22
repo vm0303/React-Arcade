@@ -1,0 +1,32 @@
+body
+{
+    background: rgba(0, 0, 0, 0.88);
+    height: 100vh;
+    padding-top: 60px;
+}
+
+
+.title
+{
+    color: #61dbfb;
+    text-align: center;
+    margin: 12px;
+}
+
+.home-text
+{
+    color: aliceblue;
+    text-align: center;
+
+    margin: 20px;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 66%;
+}
+.description
+{
+    margin: 15px 0;
+}

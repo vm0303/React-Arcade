@@ -1,0 +1,24 @@
+
+.hanoi-title
+{
+    color: #28990f;
+    text-align: center;
+    margin: 12px;
+}
+
+.directions
+{
+    color: white;
+    text-align: center;
+
+    margin: 20px;
+}
+.text-title
+{
+    font-weight: bold;
+    color: #61dbfb;
+}
+.warning
+{
+    color: #f87676;
+}
