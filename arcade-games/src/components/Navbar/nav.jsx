@@ -1,17 +1,13 @@
 import React from "react";
-import {
+import
+{
     Routes,
-    Route,
-    Link
+    Route
 } from "react-router-dom";
 import Home from "../Homepage/Home";
 import Hanoi from "../toh/Hanoi";
-import Puzzle from "../Sliding_Puzzle/Puzzle"
-import "./nav.css"
-
-
-
-
+import DragPuzzle from "../Drag_Drop_Puzzle/DragPuzzle";
+import "./nav.css";
 
 function NavBar()
 {
@@ -31,10 +27,10 @@ function NavBar()
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a href="/hanoi"  className="nav-link" >Hanoi Tower</a>
+                                <a href="/hanoi"  className="nav-link" >Towers of Hanoi</a>
                             </li>
                             <li className="nav-item">
-                                <a href="/slidingPuzzle" className="nav-link">Sliding Puzzle</a>
+                                <a href="/drag-and-dropPuzzle" className="nav-link">Drag And Drop Puzzle</a>
                             </li>
                         </ul>
                     </div>
@@ -45,7 +41,7 @@ function NavBar()
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/hanoi" element={<Hanoi/>}/>
-                <Route path="/sliding" element={<Puzzle/>}/>
+                <Route path="/drag-and-dropPuzzle" element={<DragPuzzle/>}/>
             </Routes>
 
 

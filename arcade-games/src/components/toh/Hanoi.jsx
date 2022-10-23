@@ -17,26 +17,27 @@ const Hanoi =() =>
                 id: "T2",
                 column: 1,
                 row: 2,
-                width: 6
+                width: 5
             },
             {
                 id: "T3",
                 column: 1,
                 row: 3,
-                width: 9
-            },
+                width: 7
+            }/*,
             {
                 id: "T4",
                 column: 1,
                 row: 4,
-                width: 12
+                width: 9
             },
             {
                 id: "T5",
                 column: 1,
                 row: 5,
-                width: 15
-            }
+                width: 11
+            }*/
+
         ]);
         const drag = (evaluate) =>
         {
@@ -88,7 +89,7 @@ const Hanoi =() =>
         const winner =tiles.every((tile)=> tile.column === 3);
     return (
             <div className="hanoi">
-                <h1 className="hanoi-title">The Hanoi Towers</h1>
+                <h1 className="hanoi-title">Towers of Hanoi</h1>
                 <div className="directions">
                     <p>
                         <span className="text-title">Objective:</span> The goal is to move all the tiles from the left-most tower to the right-most tower.
@@ -112,8 +113,8 @@ const Hanoi =() =>
                         Good luck and have fun!
                     </p>
 
-                    <p>
-                    Move count: {moves}
+                    <p className="numberOfMoves">
+                   Number of moves used: {moves}
                     </p>
                 </div>
                 <div className="hanoi-content">
@@ -124,7 +125,7 @@ const Hanoi =() =>
                          onDragOver={(evaluate)=> evaluate.preventDefault()}
                          onDrop={dropManager}>
 
-                        <div className="tower-hilt"/>
+                        <div className="tower-rod"/>
 
                         {col1T.sort((i,j)=>i.width-j.width)
                             .map((tile, index)=>
@@ -152,7 +153,7 @@ const Hanoi =() =>
                         onDragOver={(evaluate) => evaluate.preventDefault()}
                         onDrop={dropManager}
                     >
-                        <div className="tower-hilt"/>
+                        <div className="tower-rod"/>
                         {col2T
                             .sort((i, j) => i.width - j.width)
                             .map((tile, index) => {
@@ -165,7 +166,7 @@ const Hanoi =() =>
                                 return (
                                     <div
                                         {...tile}
-                                        className="tile"
+                                        className="tower-tile"
                                         draggable
                                         key={`column-2-${tile.id}`}
                                         onDragOver={(evaluate) => evaluate.preventDefault()}
@@ -181,7 +182,7 @@ const Hanoi =() =>
                         onDragOver={(evaluate) => evaluate.preventDefault()}
                         onDrop={dropManager}
                     >
-                        <div className="tower-hilt"/>
+                        <div className="tower-rod"/>
                         {col3T
                             .sort((i, j) => i.width - j.width)
                             .map((tile, index) => {
@@ -194,7 +195,7 @@ const Hanoi =() =>
                                 return (
                                     <div
                                         {...tile}
-                                        className="tile"
+                                        className="tower-tile"
                                         draggable
                                         key={`column-3-${tile.id}`}
                                         onDragOver={(evaluate) => evaluate.preventDefault()}
@@ -206,19 +207,15 @@ const Hanoi =() =>
                     </div>
                     </div>
                 {winner && (
-                    <div className="win-message">
+                    <div className="winnerMessage">
                         Congratulations! You Win!
-                        <div className="win-subtitle">
-                            You solved the puzzle with just <span className="win-number">{moves}</span>{" "}
+                        <div className="winnerSubtitle">
+                            You solved the puzzle with just <span className="winnerNumber">{moves}</span>{" "}
                             moves!
                         </div>
                     </div>
                 )}
                     </div>
-
-
-
-            
 
     )
 
