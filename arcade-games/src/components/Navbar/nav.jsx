@@ -6,7 +6,7 @@ import
 } from "react-router-dom";
 import Home from "../Homepage/Home";
 import Hanoi from "../toh/Hanoi";
-import DragPuzzle from "../Drag_Drop_Puzzle/DragPuzzle";
+import DragPuzzle from "../Sliding-Puzzle/SlidingPuzzle";
 import "./nav.css";
 
 function NavBar()
@@ -30,7 +30,7 @@ function NavBar()
                                 <a href="/hanoi"  className="nav-link" >Towers of Hanoi</a>
                             </li>
                             <li className="nav-item">
-                                <a href="/drag-and-dropPuzzle" className="nav-link">Drag And Drop Puzzle</a>
+                                <a href="/slidingPuzzle" className="nav-link">Sliding Puzzle</a>
                             </li>
                         </ul>
                     </div>
@@ -41,7 +41,7 @@ function NavBar()
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/hanoi" element={<Hanoi/>}/>
-                <Route path="/drag-and-dropPuzzle" element={<DragPuzzle/>}/>
+                <Route path="/slidingPuzzle" element={<DragPuzzle/>}/>
             </Routes>
 
 

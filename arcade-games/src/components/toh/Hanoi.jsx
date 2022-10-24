@@ -24,19 +24,13 @@ const Hanoi =() =>
                 column: 1,
                 row: 3,
                 width: 7
-            }/*,
+            },
             {
                 id: "T4",
                 column: 1,
                 row: 4,
                 width: 9
-            },
-            {
-                id: "T5",
-                column: 1,
-                row: 5,
-                width: 11
-            }*/
+            }
 
         ]);
         const drag = (evaluate) =>
@@ -138,6 +132,7 @@ const Hanoi =() =>
                                     `calc(80vh - ${numOfTiles * 40 +20}px)` : "0";
                                 return(
                                     <div {...tile} className="tower-tile"
+                                         title="Drag these tiles to the the right-most Hanoi tower in order to win the game!"
                                     draggable
                                     key={`column-1-${tile.id}`}
                                     onDragOver={(evaluation) => evaluation.preventDefault()}
@@ -167,6 +162,7 @@ const Hanoi =() =>
                                     <div
                                         {...tile}
                                         className="tower-tile"
+                                        title="Drag these tiles to the the right-most Hanoi tower in order to win the game!"
                                         draggable
                                         key={`column-2-${tile.id}`}
                                         onDragOver={(evaluate) => evaluate.preventDefault()}
@@ -178,6 +174,7 @@ const Hanoi =() =>
                     </div>
                     <div
                         className="col-cont"
+                        title="When all the tiles are placed on this rod, you win the game!"
                         id={3}
                         onDragOver={(evaluate) => evaluate.preventDefault()}
                         onDrop={dropManager}
@@ -196,6 +193,7 @@ const Hanoi =() =>
                                     <div
                                         {...tile}
                                         className="tower-tile"
+                                        title="Drag these tiles to the the right-most Hanoi tower in order to win the game!"
                                         draggable
                                         key={`column-3-${tile.id}`}
                                         onDragOver={(evaluate) => evaluate.preventDefault()}

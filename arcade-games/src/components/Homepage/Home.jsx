@@ -9,11 +9,12 @@ const Home = () => (
         <img
             src={aGif}
             alt="Arcade gif"
-            title="A picture of a boy playing in an arcade"/>
+            title="A picture of a boy playing in an arcade.
+           Gif by SleepySeaSlug at Deviant Art"/>
             <div className="description">
-                    <p> This website features interesting puzzles that you usually see in the Computer Science industry</p>
-                    <p> Check out the Navbar on top of the page to try and solve these puzzles on your own!</p>
-                    <p> Good luck and have fun!</p>
+                    <p> This website features cool games that you usually see in the Computer Science industry</p>
+                    <p> Check out the Navbar on top of the page and play these games on your own!</p>
+                    <p> Have fun!</p>
             </div>
         </div>
     </div>

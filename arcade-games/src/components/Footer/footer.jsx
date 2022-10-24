@@ -20,6 +20,20 @@ const Footer = () => (
                 </a>
 
             </p>
+            <p
+                style={{color: "whitesmoke"}}
+                title="I put a copyright here so you would know where I got most of my code from while doing the Sliding Puzzle program"
+            >
+                Sliding Puzzle: &copy; 2022 from &nbsp;
+                <a
+                    style={{color: "skyblue"}}
+                    target="_blank"
+                    href="https://www.youtube.com/watch?v=_wdbhVvMOCs&t=0s&ab_channel=BarelyCodingwithDanielBark"
+                    rel="noreferrer">
+                    Barely Coding with Daniel Bark
+                </a>
+
+            </p>
             <p style={{color: "whitesmoke"}}>
                 Edited and re-created by Vishal Madhav
             </p>
