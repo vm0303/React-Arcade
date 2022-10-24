@@ -1,8 +1,8 @@
 {
   "name": "arcade-games",
   "version": "0.1.0",
-  "homepage": "https://vm0303.github.io/react-arcade-games",
   "private": true,
+  "homepage": "https://vm0303.github.io/react-arcade-games",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
