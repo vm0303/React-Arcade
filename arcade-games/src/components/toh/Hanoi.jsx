@@ -101,8 +101,9 @@ const Hanoi =() =>
                         <span className="text-title-warning">WARNING:</span> Please keep in mind that bigger tiles CANNOT be stacked on smaller tiles.
                     </p>
 
-
-
+                    <p className="side-note">Note: The Towers of Hanoi doesn't work on mobile devices yet, 
+                    but I will update this in the next few months
+                    </p>
                     <p>
                         Good luck and have fun!
                     </p>
