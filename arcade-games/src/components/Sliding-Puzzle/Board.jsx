@@ -62,7 +62,7 @@ function Board({ imgUrl }) {
                     />
                 ))}
             </ul>
-            {<div className="winner-msg">Congratulations! You have solved the puzzle!</div>}
+            {hasWon && isStarted && <div className="winner-msg">Congratulations! You have solved the puzzle!</div>}
 
         </>
     );
